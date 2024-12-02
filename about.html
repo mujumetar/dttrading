@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+
+
+    <div
+        class="preloader position-fixed top-0 start-0 w-100 h-100 justify-content-center align-items-center loader-shade shadow">
+        <img src="/img/loder.png" alt=""
+            class="shadow  img-fluid preloader-img position-absolute translate-middle top-50 start-50">
+        <div class="spinner-border p-5" style="border-top:1px solid transparent" role="status">
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid position-fixed header" id="naving">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark  bg-transparent">
+                <div class="container-fluid my-3">
+                    <img src="/img/logo.png" alt="" class="img-fluid" style="width: 80px; height: 80px;"><p class="logo-text">DT Trading</p>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link active fs-5" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link fs-5" aria-current="page" href="/courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link fs-5" aria-current="page" href="/about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown mx-3">
+                                <a class="nav-link active dropdown-toggle fs-5" data-bs-target="#droping" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu" id="droping" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+
+                                    <li><a class="dropdown-item" href="#">Elements</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item mx-3">
+                                <a class="nav-link fs-5" aria-current="page" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <button
+                                    class="border-0 rounded-3 px-5 py-2 cubic-left position-relative bg-yellowish"><span
+                                        class="join text-white">Join</span></button>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <button
+                                    class="border-0 rounded-3 px-5 py-2 cubic-right position-relative bg-yellowish"><span
+                                        class="join text-white">Login</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <header class="header">
+        <div class="container-fluid ">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark  bg-transparent">
+                    <div class="container-fluid my-3">
+                        <img src="/img/logo.png" alt="" class="img-fluid" style="width: 80px; height: 80px;"><p class="logo-text">DT Trading</p>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link  fs-5" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link fs-5" aria-current="page" href="/courses.html">Courses</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link fs-5 active" aria-current="page" href="/about.html">About</a>
+                                </li>
+                                <li class="nav-item dropdown mx-3">
+                                    <a class="nav-link active dropdown-toggle fs-5" data-bs-target="#droping"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <ul class="dropdown-menu" id="droping" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                                        <li><a class="dropdown-item" href="#">Blog Details</a></li>
+
+                                        <li><a class="dropdown-item" href="#">Elements</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link fs-5" aria-current="page" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <button
+                                        class="border-0 rounded-3 px-5 py-2 cubic-left position-relative bg-yellowish"><span
+                                            class="join text-white">Join</span></button>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <button
+                                        class="border-0 rounded-3 px-5 py-2 cubic-right position-relative bg-yellowish"><span
+                                            class="join text-white">Login</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container-fluid p-lg-5 py-5">
+            <div class="container">
+                <div class="row py-5 my-5">
+                    <div class="col-lg-6">
+                        <div class="row ">
+                            <div class="col-12">
+                                <div class="hero-title">
+                                    <h1 class="text-light fw-bolder">About Us</h1>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <a href="#">Home</a>
+                                <span class="text-white mx-1">|</span>
+                                <a href="#">About</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div
+                    class="row-flex d-flex justify-content-between px-3 py-4 shadow bg-white align-items-center justify-content-center experies-card">
+                    <div class="experties">
+                        <img src="/img/books.svg" alt="">
+                    </div>
+                    <div class="course-experties  w-100 px-5">
+                        <h4 class="purple-clr">60+ UX Courses</h4>
+                        <p>The automated process all your website tasks.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div
+                    class="row-flex d-flex justify-content-between px-3 py-4 shadow bg-white align-items-center justify-content-center experies-card">
+                    <div class="experties">
+                        <img src="/img/employee.svg" alt="">
+                    </div>
+                    <div class="course-experties  w-100 px-5">
+                        <h4 class="purple-clr">60+ UX Courses</h4>
+                        <p>The automated process all your website tasks.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div
+                    class="row-flex d-flex justify-content-between ps-3 py-4 shadow bg-white align-items-center justify-content-center experies-card">
+                    <div class="experties">
+                        <img src="/img/alarm.svg" alt="">
+                    </div>
+                    <div class="course-experties  w-100 px-5">
+                        <h4 class="purple-clr">60+ UX Courses</h4>
+                        <p>The automated process all your website tasks.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 aliggn-items-start">
+                        <div class="img-fluid py-1">
+                            <img src="/img/about.svg" alt="" srcset=""
+                                class="p-4 bg-primary ms-4 fs-1 fw-bolder rounded-circle">
+                        </div>
+                        <div class="container ms-3">
+                            <h2 class="purple-clr fs-1 my-3 ">Learn new skills online with <br> top educators</h2>
+                        </div>
+                        <div class="paragraph  ms-4">
+                            <p class="fs-6">The automated process all your website tasks. Discover tools and <br>
+                                techniques to engage effectively with vulnerable children and young people.</p>
+                        </div>
+                        <div class="lists">
+                            <ul class="list-unstyled ms-2">
+                                <li class="ms-2 d-flex align-items-center ">
+                                    <p><i class="ri-check-line text-success fs-3 p-1"></i>Techniques to engage
+                                        effectively with vulnerable children and young people.</p>
+                                </li>
+                                <li class="ms-2 d-flex align-items-center ">
+                                    <p><i class="ri-check-line text-success fs-3 p-1"></i> Join millions of
+                                        people from around the world learning together.</p>
+                                </li>
+                                <li class="ms-2 d-flex align-items-center ">
+                                    <p><i class="ri-check-line text-success fs-3 p-1"></i> Join millions of
+                                        people from around the world learning together.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                <a class="btn rounded-circle btn-warning border text-white" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><i
+                        class="ri-play-circle-fill text-white fs-1 rounded-circle"></i></a>
+
+
+                <div class="modal" tabindex="-1" id="exampleModal">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content  bg-transparent">
+                            <div class="modal-header ">
+                                <h5 class="modal-title text-light">Tutorial</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe width="100%" height="415"
+                                    src="https://www.youtube.com/embed/es4x5R-rV9s?si=x1-hf7pAOW18APcz"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-5 mb-5">
+        <h2 class="purple-clr fs-1 my-5">Explore Top Subjects</h2>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-lg-5 g-md-3 g-sm-2 g-1">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="img-fluid position-relative">
+                    <img src="/img/featured.png" alt="" srcset="" class="w-100 rounded-3 imgs">
+                    <div class="programming position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+                    <div class="overlay position-absolute top-0 start-0 rounded-3">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="img-fluid position-relative">
+                    <img src="/img/featured.png" alt="" srcset="" class="w-100 rounded-3 imgs">
+                    <div class="programming position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+
+                    <div class="overlay position-absolute top-0 start-0 rounded-3">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="img-fluid position-relative">
+                    <img src="/img/featured.png" alt="" srcset="" class="w-100 rounded-3 imgs">
+                    <div class="programming position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+
+                    <div class="overlay position-absolute top-0 start-0 rounded-3">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="img-fluid position-relative">
+                    <img src="/img/featured.png" alt="" srcset="" class="w-100 rounded-3 imgs">
+                    <div class="programming position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+
+                    <div class="overlay position-absolute top-0 start-0 rounded-3">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="img-fluid position-relative">
+                    <img src="/img/featured.png" alt="" srcset="" class="w-100 rounded-3 imgs">
+                    <div class="programming position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+
+                    <div class="overlay position-absolute top-0 start-0 rounded-3">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="img-fluid position-relative">
+                    <img src="/img/featured.png" alt="" srcset="" class="w-100 rounded-3 imgs">
+                    <div class="programming position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+
+                    <div class="overlay position-absolute top-0 start-0 rounded-3">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="img-fluid position-relative">
+                    <img src="/img/featured.png" alt="" srcset="" class="w-100 rounded-3 imgs">
+                    <div class="programming position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+
+                    <div class="overlay position-absolute top-0 start-0 rounded-3">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="img-fluid position-relative">
+                    <img src="/img/featured.png" alt="" srcset="" class="w-100 rounded-3 imgs">
+
+                    <div class="programming position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+
+                    <div class="overlay position-absolute top-0 start-0 rounded-3">
+                        <a href="#" class="text-decoration-none text-white fs-3">Programming</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container d-flex justify-content-center my-5">
+            <a href="#" class="btn btn border cubic-verticle position-relative  px-5 py-3">View More Subjects</a>
+        </div>
+
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 ">
+                <img src="/img/worker.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12   d-flex flex-column align-items-center justify-content-center">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+
+                        <div class="container ms-3">
+                            <h2 class="purple-clr fs-1 my-3 ">Learn new skills online with <br> top educators</h2>
+                        </div>
+                        <div class="paragraph  ms-4">
+                            <p class="fs-6">The automated process all your website tasks. Discover tools and <br>
+                                techniques to engage effectively with vulnerable children and young people.</p>
+                        </div>
+                        <div class="lists">
+                            <ul class="list-unstyled ms-2">
+                                <li class="ms-2 d-flex align-items-center ">
+                                    <p><i class="ri-check-line text-success fs-3 p-1"></i>Techniques to engage
+                                        effectively with vulnerable children and young people.</p>
+                                </li>
+                                <li class="ms-2 d-flex align-items-center ">
+                                    <p><i class="ri-check-line text-success fs-3 p-1"></i> Join millions of
+                                        people from around the world learning together.</p>
+                                </li>
+                                <li class="ms-2 d-flex align-items-center ">
+                                    <p><i class="ri-check-line text-success fs-3 p-1"></i> Join millions of
+                                        people from around the world learning together.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container d-flex justify-content-center mt-5 mb-5">
+        <h2 class="purple-clr fs-1 my-5">Community Experts</h2>
+    </div>
+
+    <div class="container mb-5">
+        <div class="responsive">
+            <div class="slider d-flex justify-content-center align-items-center text-center">
+                <div class="team p-2">
+                    <div class="img-team m-2 p-3">
+                        <img src="/img/team3.png" alt="" class="img-fluid">
+                    </div>
+                    <h3>Mr.Shakil</h3>
+                    <p>the Automated process all your <br> website tasks</p>
+                </div>
+            </div>
+            <div class="slider d-flex justify-content-center align-items-center text-center">
+                <div class="team p-2">
+                    <div class="img-team m-2 p-3">
+                        <img src="/img/team3.png" alt="" class="img-fluid">
+                    </div>
+                    <h3>Mr.Shakil</h3>
+                    <p>the Automated process all your <br> website tasks</p>
+                </div>
+            </div>
+            <div class="slider d-flex justify-content-center align-items-center text-center">
+                <div class="team p-2">
+                    <div class="img-team m-2 p-3">
+                        <img src="/img/team3.png" alt="" class="img-fluid">
+                    </div>
+                    <h3>Mr.Shakil</h3>
+                    <p>the Automated process all your <br> website tasks</p>
+                </div>
+            </div>
+            <div class="slider d-flex justify-content-center align-items-center text-center">
+                <div class="team p-2">
+                    <div class="img-team m-2 p-3">
+                        <img src="/img/team3.png" alt="" class="img-fluid">
+                    </div>
+                    <h3>Mr.Shakil</h3>
+                    <p>the Automated process all your <br> website tasks</p>
+                </div>
+            </div>
+            <div class="slider d-flex justify-content-center align-items-center text-center">
+                <div class="team p-2">
+                    <div class="img-team m-2 p-3">
+                        <img src="/img/team3.png" alt="" class="img-fluid">
+                    </div>
+                    <h3>Mr.Shakil</h3>
+                    <p>the Automated process all your <br> website tasks</p>
+                </div>
+            </div>
+            <div class="slider d-flex justify-content-center align-items-center text-center">
+                <div class="team p-2">
+                    <div class="img-team m-2 p-3">
+                        <img src="/img/team3.png" alt="" class="img-fluid">
+                    </div>
+                    <h3>Mr.Shakil</h3>
+                    <p>the Automated process all your <br> website tasks</p>
+                </div>
+            </div>
+            <div class="slider d-flex justify-content-center align-items-center text-center">
+                <div class="team p-2">
+                    <div class="img-team m-2 p-3">
+                        <img src="/img/team3.png" alt="" class="img-fluid">
+                    </div>
+                    <h3>Mr.Shakil</h3>
+                    <p>the Automated process all your <br> website tasks</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container mt-5 p-5">
+            <div class="row  g-5">
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="row gy-lg-3 gy-md-2 gy-sm-1">
+                        <div class="col-12">
+                            <img src="/img/logo.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 my-3">
+                            <p>The automated process starts as soon as your clothes go into the machine.</p>
+                        </div>
+                        <div class="col-12">1 2 3</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="row gy-lg-3 gy-md-2 gy-sm-1">
+                        <div class="col-12">
+                            <h4 class="fs-3 ps-0">Our solutions</h4>
+                        </div>
+                        <div class="col-12"><a href="#">Designs & Creatives</a></div>
+                        <div class="col-12"><a href="#">Telecommunication</a></div>
+                        <div class="col-12"><a href="#">Restaurant</a></div>
+                        <div class="col-12"><a href="#">Programming</a></div>
+                        <div class="col-12"><a href="#">Architecture</a></div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="row gy-lg-3 gy-md-2 gy-sm-1">
+                        <div class="col-12">
+                            <h4 class="fs-3 ps-0">Support</h4>
+                        </div>
+                        <div class="col-12"><a href="#">Designs & Creatives</a></div>
+                        <div class="col-12"><a href="#">Telecommunication</a></div>
+                        <div class="col-12"><a href="#">Restaurant</a></div>
+                        <div class="col-12"><a href="#">Programming</a></div>
+                        <div class="col-12"><a href="#">Architecture</a></div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="row gy-lg-3 gy-md-2 gy-sm-1">
+                        <div class="col-12">
+                            <h4 class="fs-3 ps-0">Company</h4>
+                        </div>
+                        <div class="col-12"><a href="#">Designs & Creatives</a></div>
+                        <div class="col-12"><a href="#">Telecommunication</a></div>
+                        <div class="col-12"><a href="#">Restaurant</a></div>
+                        <div class="col-12"><a href="#">Programming</a></div>
+                        <div class="col-12"><a href="#">Architecture</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container p-5 d-flex justify-content-center align-items-center">
+            Copyright © 2024 All rights reserved | made with &hearts; by &nbsp;<b>MuJU</b>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(window).on('load', function () {
+        $(".preloader").fadeOut(1500);
+    })
+
+
+    $(window).scroll(function () {
+
+        let scroll = $(window).scrollTop();
+        $(".showing").text(scroll)
+        if (scroll > 300) {
+            $("#naving").slideDown("slower")
+        }
+        else {
+            $("#naving").slideUp("slower")
+        }
+
+    })
+
+
+    $('.responsive').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        autoplay: true,
+        autoplayDelay: 1500,
+        loop: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
+    });
+
+</script>
+
+</html>
